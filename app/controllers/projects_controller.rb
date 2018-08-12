@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  layout 'projects'
   before_action :set_project, only: [:show, :edit, :update, :destroy]
   access all: [:index, :show, :new, :edit, :create, :update, :destroy], user: :all
 
