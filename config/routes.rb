@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   end
 
 
-  root to: 'projects#index'
+  root to: 'pages#index'
 end
