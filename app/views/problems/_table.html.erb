@@ -1,0 +1,24 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Tag</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @problems.each do |problem| %>
+      <tr>
+        <th scope="row"><%= problem.id %></th>
+        <td><%= link_to problem.name, problem %></td>
+        <td><%= problem.from %></td>
+        <td><%= link_to '<i class="ion-edit"></i>'.html_safe, edit_problem_path(problem) %></td>
+        <td><%= link_to '<i class="ion-close"></i>'.html_safe, problem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

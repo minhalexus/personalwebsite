@@ -1,28 +1,21 @@
 <header id="home" class="gradient-violat">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <%= link_to '<h4>Minhal</h4>'.html_safe, root_url%>
+      <%= link_to 'Minhal', root_path, class:"navbar-brand", method: :get %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="nav navbar-nav ml-auto"> <!-- <ul class="navbar-nav ml-auto"> -->
           <li class="nav-item">
-            <a class="nav-link" href="#introduction">Introduction</a>
+            <%= link_to 'Projects', projects_path, class:"nav-link", method: :get %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blog-card">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#feature">Feature</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#newsletter">News Letter</a>
+            <%= link_to 'Problems', problems_path, class:"nav-link", method: :get %>
           </li>
           <li class="nav-item">
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" if logged_in?(:admin) %>
           </li>
-          <li><a href="#" class="btn btn-orange border-none btn-rounded-corner btn-navbar">Download<span class="icon-on-button"><i class="ion-ios-cloud-download-outline"></i></span></a></li>
         </ul>
       </div>
     </div>

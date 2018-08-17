@@ -379,6 +379,9 @@ ul.social-list li a:hover, ul.social-list li a:focus{
 	background: -ms-linear-gradient(-45deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 15%, rgba(143,2,34,1) 71%, rgba(188,224,238,1) 100%);
 	background: linear-gradient(135deg, rgba(179,220,237,1) 0%, rgba(41,184,229,1) 15%, rgba(143,2,34,1) 71%, rgba(188,224,238,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
+
+	/** Turns things blu-green **/
+	background-image: linear-gradient(to left bottom, #1680b2, #00a3c7, #00c2b2, #00dc78, #a8eb12);
 }
 .btn-orange,.gradient-orange {
   background-image: -webkit-linear-gradient(35deg, rgb(232,88,137) 0%, rgb(232,98,123) 32%, rgb(232,108,108) 100%);

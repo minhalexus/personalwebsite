@@ -1,0 +1,14 @@
+
+.jumbotron{
+	background-color: red;
+	background-image: linear-gradient(to left bottom, #1680b2, #00a3c7, #00c2b2, #00dc78, #a8eb12);
+}
+
+code{
+	color:white;
+}
+
+pre code{
+	color:white;
+}
+

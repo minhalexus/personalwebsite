@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Minhal Shanjer UW</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <p id="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <div class="container">
+        <h1 align="center">Problems</h1>
+        <p class="lead", align="center">Fun solving tricky problems!</p>
+      </div>
+    </div>
+    <!-- <p class="alert"><%= alert %></p> -->
+    <div class="container">
+      <%= render 'shared/quicknav' %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

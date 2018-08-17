@@ -17,5 +17,6 @@
 //= require bootstrap-sprockets
 //= require owl.carousel
 //= require script
+//= require codeboxscript
 //= require_tree .
 

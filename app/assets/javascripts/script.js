@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on('turbolinks:load', function() {
 
 	// OWL CAROUSEL INSTALLATION
 	$("#testimonial-carousel").owlCarousel({
