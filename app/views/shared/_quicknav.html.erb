@@ -11,7 +11,7 @@
             <%= link_to 'Projects', projects_path, class:"nav-link", method: :get %>
           </li>
           <li class="nav-item">
-            <%= link_to 'Problems', problems_path, class:"nav-link", method: :get %>
+            <%= link_to 'Coding Problems', problems_path, class:"nav-link", method: :get %>
           </li>
           <li class="nav-item">
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" if logged_in?(:admin) %>

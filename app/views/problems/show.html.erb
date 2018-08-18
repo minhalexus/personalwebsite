@@ -16,36 +16,9 @@
   <!-- HTML Box -->
   <div class="codeheader" id="codeheader_html">{{ html }}</div>
   <div id="codebox">
-    <pre><code data-language="html"><%= @problem.description %>
+    <pre><code data-language="html"><%= @problem.code %>
     </code></pre>
   </div>
-
-  <!-- CSS Box -->
-  <div class="codeheader" id="codeheader_css">{{ css }}</div>
-  <div id="codebox">
-     <pre><code>.somecssclass {
-      padding: 15px;
-      font-family: Courier, sans-serif;
-      font-size: 12px;
-      color: #fff;
-      background-color: #3d3d3d;
-      margin-bottom: 10px;
-      -webkit-border-radius: 0px 0px 6px 6px;
-      -moz-border-radius: 0px 0px 6px 6px;
-      border-radius: 0px 0px 6px 6px;
-}</code></pre>
-  </div>
-
-  <!-- PHP Box -->
-  <div class="codeheader" id="codeheader_php">{{ php }}</div>
-  <div id="codebox">
-    <code><?php echo="Hello World!" ?></code>
-  </div>
-
-  <!-- JS Box -->
-  <div class="codeheader" id="codeheader_js">{{ js }}</div>
-  <div id="codebox">var apple = "Apple California";</div>
-</div>
 
 <%= link_to 'Edit', edit_problem_path(@problem) %> |
 <%= link_to 'Back', problems_path %>
