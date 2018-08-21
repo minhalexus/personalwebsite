@@ -18,5 +18,6 @@
 //= require owl.carousel
 //= require script
 //= require codeboxscript
+//= require cards
 //= require_tree .
 

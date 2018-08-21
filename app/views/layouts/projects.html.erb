@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Minhal Shanjer UW</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="turbolinks-cache-control" content="no-cache">
 
-    <%= stylesheet_link_tag    'projects', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'projects', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'projects', media: 'all', 'data-turbolinks-track': 'true' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
   </head>
 
   <body>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 align="center">Projects</h1>
+        <p class="lead", align="center">Always striving to create something magical.</p>
+      </div>
+      <p id="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+    
+    <!-- <p class="alert"><%= alert %></p> -->
+    <div class="container">
+      <%= render 'shared/quicknav' %>
+      <%= yield %>
+    </div>
   </body>
 </html>

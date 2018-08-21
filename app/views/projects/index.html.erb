@@ -1,30 +1,50 @@
-<p id="notice"><%= notice %></p>
-<%= render "shared/navbar" %>
-
 <h1>Projects</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div data-turbolinks = "false">
 
-  <tbody>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a id="nav-all", class="nav-link active" href="#">All</a>
+    </li>
+    <li class="nav-item">
+      <a id="nav-css", class="nav-link" href="#">CSS</a>
+    </li>
+    <li class="nav-item">
+      <a id="nav-js", class="nav-link" href="#">Javascript</a>
+    </li>
+  </ul>
+
+  <div class="row">
     <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.Title %></td>
-        <td><%= project.Description %></td>
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="col-md-4 cssProject">
+        <%= link_to project do %>
+          <div class="card ">
+            <%= image_tag project.image, class: "card-img-top" unless project.image.nil? %>
+            <div class="card-block">
+              <h2 class="card-text text-center">
+            <%= project.Title %>
+          </h2>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to '<i class="ion-close"></i>'.html_safe, project,  {:style=>'float:right;', method: :delete, data: { confirm: 'Are you sure?' }} %>
+        <%= link_to '<i class="ion-edit"></i>'.html_safe, edit_project_path(project), {:style=>'float:right;'} %>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
 
 <br>
 
-<%= link_to 'New Project', new_project_path if logged_in?(:admin)%>
+<div class="btn-group btn-group-justified">
+  <%= link_to 'Add New Project', new_project_path, class: "btn btn-success" if logged_in?(:admin)%>
+</div>
+
+<%= render 'footer' %>
+
+<div id="scroll-top-div" class="scroll-top-div">
+  <div class="scroll-top-icon-container">
+    <i class="ion-ios-arrow-thin-up"></i>
+  </div>
+</div>
+

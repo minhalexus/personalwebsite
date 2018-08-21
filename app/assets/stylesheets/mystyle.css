@@ -12,3 +12,10 @@ pre code{
 	color:white;
 }
 
+h2{
+	font-size: 20px;
+}
+
+.nav-link.active{
+	background-color:green;
+}
