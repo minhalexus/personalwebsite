@@ -9,6 +9,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="turbolinks-cache-control" content="no-cache">
 
+    <%= favicon_link_tag 'minhalogo.png'%>
     <%= stylesheet_link_tag    'projects', media: 'all', 'data-turbolinks-track': 'true' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
   </head>
@@ -19,14 +20,16 @@
         <h1 align="center">Projects</h1>
         <p class="lead", align="center">Always striving to create something magical.</p>
       </div>
-      <p id="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
     </div>
     
     <!-- <p class="alert"><%= alert %></p> -->
     <div class="container">
+      <p id="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= render 'shared/quicknav' %>
       <%= yield %>
     </div>
+    <%= render "shared/footer" %>
+
   </body>
 </html>

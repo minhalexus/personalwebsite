@@ -1,6 +1,6 @@
 
 .jumbotron{
-	background-color: red;
+	background-color: grey;
 	background-image: linear-gradient(to left bottom, #1680b2, #00a3c7, #00c2b2, #00dc78, #a8eb12);
 }
 
@@ -18,4 +18,19 @@ h2{
 
 .nav-link.active{
 	background-color:green;
+}
+
+#notice{
+	color: darkgreen;
+	align-self: center;
+}
+
+.alert{
+	color: red;
+	align-self: center;
+}
+
+#footer{
+	background-color: grey;
+	background-image: radial-gradient(circle, #84e3dd, #85e0cf, #88dcc1, #8ed8b3, #95d3a5);
 }
