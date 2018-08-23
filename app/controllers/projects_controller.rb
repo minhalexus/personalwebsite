@@ -27,6 +27,10 @@ class ProjectsController < ApplicationController
 
     if @project.save
       redirect_to @project, notice: 'Project was successfully created.'
+      UserMailer.welcome_email.deliver_now
+      puts "***********************************************************"
+      puts "Sent EMAIL"
+      puts "***********************************************************"
     else
       render :new
     end
