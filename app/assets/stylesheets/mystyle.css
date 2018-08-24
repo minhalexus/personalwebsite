@@ -34,3 +34,18 @@ h2{
 	background-color: grey;
 	background-image: radial-gradient(circle, #84e3dd, #85e0cf, #88dcc1, #8ed8b3, #95d3a5);
 }
+
+.font-size-80{
+	font-size: 80px;
+}
+
+.center-padding{
+	text-align: center;
+	padding-top: 14rem;
+	padding-bottom: 10rem;
+}
+
+
+.center{
+	text-align: center;
+}

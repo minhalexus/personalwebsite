@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   end
 
   root to: 'pages#index'
+
+  post '/', to: 'pages#create'
+  get 'messages', to: 'pages#list_messages'
+  get 'messages/:id', as: 'message', to: 'pages#show_message'
 end

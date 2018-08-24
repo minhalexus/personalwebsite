@@ -1,0 +1,30 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 align="center">Messages</h1>
+    <p class="lead", align="center">Always striving to create something magical.</p>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+	<table class="table">
+	  <thead>
+	    <tr>
+	      <th scope="col">#</th>
+	      <th scope="col">Name</th>
+	      <th scope="col">Email</th>
+	    </tr>
+	  </thead>
+
+	  <tbody>
+	    <% @messages.each do |message| %>
+	      <tr>
+	        <th scope="row"><%= message.id %></th>
+	        <td><%= link_to message.name, message %></td>
+	        <td><%= message.email %></td>
+	      </tr>
+	    <% end %>
+	  </tbody>
+	</table>
+</div>
