@@ -166,8 +166,8 @@ header{
 	height: 100%;
 }*/
 .feature-wiget{
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 7px;
 }
 .feature-wiget h4, .feature-wiget i{
 	color: #433b88;
@@ -304,9 +304,9 @@ ul.social-list li a:hover, ul.social-list li a:focus{
 }
 .subscription-form .form-control{
 	border-radius: 50px;
-	margin-bottom: 25px;
-	margin-top: 25px;
-	height: 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	height: 50px;
 }
 .newsletter{
 	background-color: #f1f6fa

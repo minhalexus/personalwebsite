@@ -3,6 +3,15 @@ class PagesController < ApplicationController
 	access all: [:index, :create], user: [:index, :create], admin: :all
 	def index
 		@message = Message.new
+
+    if Problem.count <= 3
+      @problems = Problem.all
+      puts "****************************************************************"
+      puts "slecting #{Problem.count} projects"
+      puts "****************************************************************"
+    else
+      @problems = Problem.take(3)
+    end
 	end
 
     def create

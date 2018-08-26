@@ -8,33 +8,17 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="feature-wiget">
-          <div class="icon-wraper">
-            <i class="ion-settings"></i>
+        <% @problems.each do |problem| %>
+          <div class="feature-wiget">
+            <div class="icon-wraper">
+              <h5 class="bottom-line"><i class="ion-code"></i> <%= link_to problem.name, problem %></h5>
+            </div>
+            <div class="content">
+              <h6><%= problem.from %></h6>
+              <p><%= problem.description %></p>
+            </div>
           </div>
-          <div class="content">
-            <h4 class="bottom-line">Easily Cutomised</h4>
-            <p>Easily customise Sedna to suit your start up, portfolio or is product. Take advantage of the layered Sketch file and bring your product to life.</p>
-          </div>
-        </div>
-        <div class="feature-wiget">
-          <div class="icon-wraper">
-            <i class="ion-calendar"></i>
-          </div>
-          <div class="content">
-            <h4 class="bottom-line">MODERN DESIGN</h4>
-            <p>Designed with modern trends and techniques in mind, Sedna will help your product stand out in an already saturated market.</p>
-          </div>
-        </div>
-        <div class="feature-wiget">
-          <div class="icon-wraper">
-            <i class="ion-ipad"></i>
-          </div>
-          <div class="content">
-            <h4 class="bottom-line">RESPONSIVE DEVELOPMENT</h4>
-            <p>Built using the latest web technologies like html5, css3, and jQuery, rest assured Sedna will look smashing on every device under the sun.</p>
-          </div>
-        </div>
+        <% end %>
       </div>
     </div>
   </div>

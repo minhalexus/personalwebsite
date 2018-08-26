@@ -34,6 +34,8 @@ h2{
 #footer{
 	background-color: grey;
 	background-image: radial-gradient(circle, #84e3dd, #85e0cf, #88dcc1, #8ed8b3, #95d3a5);
+	background-image: linear-gradient(to left bottom, #1680b2, #00a3c7, #00c2b2, #00dc78, #a8eb12);
+	opacity: 80%;
 }
 
 .font-size-80{
@@ -42,8 +44,8 @@ h2{
 
 .center-padding{
 	text-align: center;
-	padding-top: 14rem;
-	padding-bottom: 10rem;
+	padding-top: 30vh;
+	padding-bottom: 30vh;
 }
 
 
@@ -53,4 +55,20 @@ h2{
 
 .full-screen{
 	height:100vh;
+}
+
+.profile-border{
+	border:7px solid #28a745;
+}
+
+.padding-bottom-90{
+	padding-bottom: 90px;
+}
+
+h4, h3, h2, h5, h6{
+	color: #0c6c99 /* Dark Blue - Turquoise Color */;
+}
+
+a{
+	color: #22ade0;
 }
