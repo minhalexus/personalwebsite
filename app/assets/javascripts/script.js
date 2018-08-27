@@ -102,5 +102,13 @@ $(document).on('turbolinks:load', function() {
             scrollTop: 0
         }, 700);
     });
+
+
+
+    /****************************LIMIT TEXT SPACE FOR STUFF *********************/
+
+    $(".character-limit-250").text(function(index, currentText) {
+    	return currentText.substr(0, 250) + "...";
+	});
  
 });

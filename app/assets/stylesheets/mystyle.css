@@ -44,8 +44,7 @@ h2{
 
 .center-padding{
 	text-align: center;
-	padding-top: 30vh;
-	padding-bottom: 30vh;
+	padding-top: 20vh;
 }
 
 
@@ -71,4 +70,35 @@ h4, h3, h2, h5, h6{
 
 a{
 	color: #22ade0;
+}
+
+.btn-blue{
+	background-color:  #22ade0;
+	color: white;
+}
+
+.vertical-middle{
+	width: 50%;
+}
+
+.nav-link{
+
+}
+
+.position-bottom{
+	bottom: 0%;
+    position: relative;
+    padding-top: 10vh;
+}
+
+.padding-top-35{
+	padding-top: 35px;
+}
+
+@media screen and (max-width: 1080px){
+	.center-padding{
+		text-align: center;
+		padding-top: 15%;
+	}
+
 }

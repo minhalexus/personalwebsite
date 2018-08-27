@@ -1,4 +1,4 @@
-<section id="feature" class="padding-top-bottom-120 bg-image-fit-100" style="background:url(<%=asset_path('Elegant_Background.jpg') %>">
+<section id="coding-problems" class="padding-top-bottom-120 bg-image-fit-100" style="background:url(<%=asset_path('Elegant_Background.jpg') %>">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -15,10 +15,16 @@
             </div>
             <div class="content">
               <h6><%= problem.from %></h6>
-              <p><%= problem.description %></p>
+              <p class="character-limit-250"><%= problem.description %></p>
             </div>
           </div>
         <% end %>
+
+        <div class="cta-btn-group">
+          <%= link_to problems_path, class: "btn btn-blue border-none btn-rounded-corner vertical-middle" do %>
+                See Full Archive <span class="icon-on-button"><i class="ion-ios-arrow-thin-right"></i></span>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

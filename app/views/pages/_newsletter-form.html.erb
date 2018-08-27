@@ -1,0 +1,25 @@
+<%= form_with(scope: @emailaddress, url: add_email_path, local: true) do |form| %>
+  <% if @emailaddress.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@emailaddress.errors.count, "error") %> prohibited this emailaddress from being saved:</h2>
+
+      <ul>
+      <% @emailaddress.errors.full_messages.each do |mess| %>
+        <li><%= mess %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="form-group">
+    <%= form.text_field :email, class: "form-control", placeholder:"Email" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Submit', class: "btn btn-orange border-none btn-rounded-corner" %>
+  </div>
+
+<% end %>
+
+

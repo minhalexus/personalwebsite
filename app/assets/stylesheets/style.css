@@ -1,4 +1,4 @@
-/****************************************TYPOGRAPHY ***************************************************/
+i/****************************************TYPOGRAPHY ***************************************************/
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -203,7 +203,10 @@ header{
 	text-transform: initial;
 }
 .card-block{
-	padding:4rem;
+	padding-left:3rem;
+	padding-right:3rem;
+	padding-top:2rem;
+	padding-bottom:2rem;
 }
 /*******************************************TESTIMONIAL**********************************************/
 .heading-wraper{

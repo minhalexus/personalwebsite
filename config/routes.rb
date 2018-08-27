@@ -13,7 +13,16 @@ Rails.application.routes.draw do
 
   root to: 'pages#index'
 
-  post '/', to: 'pages#create'
+
+  #############################MESSAGE ROUTES ###########################
+  post '/messages/new', to: 'pages#create_message', as:'message_create'
   get 'messages', to: 'pages#list_messages'
   get 'messages/:id', as: 'message', to: 'pages#show_message'
+
+
+
+  ############################NEWSLETTER EMAIL LIST ####################
+  post 'addingemail', to: 'pages#add_email_to_list', as:'add_email'
+
+
 end

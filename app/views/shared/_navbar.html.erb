@@ -11,13 +11,16 @@
             <a class="nav-link" href="#introduction">Introduction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blog-card">About</a>
+            <a class="nav-link" href="#about">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#feature">Feature</a>
+            <a class="nav-link" href="#coding-problems">Coding Problems</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#newsletter">News Letter</a>
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
           </li>
           <li class="nav-item">
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" if logged_in?(:admin) %>

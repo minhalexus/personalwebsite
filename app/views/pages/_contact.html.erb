@@ -1,4 +1,4 @@
-<section id="newsletter" class="padding-top-bottom-90 newsletter bg-image-fit-100" style="background: radial-gradient(top left, #0cedff, #9dd35c); /*Standard*/">
+<section id="contact" class="padding-top-bottom-90 newsletter bg-image-fit-100" style="background: radial-gradient(top left, #0cedff, #9dd35c); /*Standard*/">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -12,7 +12,7 @@
           <div class="col-md-8 col-md-offset-2 padding-top-bottom-90">
             <div class="subscription-wraper text-center">
               <h4 class="text-upper">Send A Message</h4>
-              <p>Enter your email address for our weekly new update</p>
+              <p>Please feel free to add addtional contact details.</p>
               <%= render 'form' %>
             </div>
           </div>
@@ -24,14 +24,9 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2 padding-top-bottom-90">
             <div class="subscription-wraper text-center">
-              <h4 class="text-upper">Subscribe newslatter</h4>
+              <h4 class="text-upper">Newsletter</h4>
               <p>Enter your email address for our weekly new update</p>
-              
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" size="40">
-              </div>
-              <a class="btn btn-orange border-none btn-rounded-corner" href="#">Subscribe  now<span class="icon-on-button"><i class="ion-ios-arrow-thin-right"></i></span></a>
-              
+              <%= render 'newsletter-form' %>
             </div>
           </div>
         </div>

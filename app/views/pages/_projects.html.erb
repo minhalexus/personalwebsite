@@ -1,0 +1,32 @@
+<section id="projects" class="padding-top-bottom-90">
+  <div class="container">
+    <div class="heading-wraper text-center margin-bottom-80">
+      <h4>Projects</h4>
+      <hr class="heading-devider gradient-orange">
+    </div>
+    <div class="row">
+      <% @projects.each do |project| %>
+        <div class="col-md-4">
+          <div class="card">
+            <%= image_tag project.image, class: "card-img-top img-responsive max-width-100", alt:"" %>
+            <div class="card-block">
+              <p class="card-text"><small class="text-muted blog-category">web design</small></p>
+              <h4 class="card-title"><%= link_to project.Title, project %></h4>
+              <p class="card-text"><small class="text-muted italic">21<sup>st</sup> jun 2016</small></p>
+              <p class="card-text character-limit-250"><%= project.Description %></p>
+
+              <%= link_to project, class: "btn btn-link" do %>
+                Read More <span><i class="ion-ios-arrow-thin-right"></i></span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <div class="col-md-12 padding-top-35">
+        <%= link_to projects_path, class: "btn btn-blue border-none btn-rounded-corner vertical-middle" do %>
+          See Full Archive <span class="icon-on-button"><i class="ion-ios-arrow-thin-right"></i></span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section> 
