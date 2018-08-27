@@ -81,8 +81,8 @@ a{
 	width: 50%;
 }
 
-.nav-link{
-
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .position-bottom{
@@ -93,6 +93,11 @@ a{
 
 .padding-top-35{
 	padding-top: 35px;
+}
+
+p{
+	color: #403f3f;
+	size: 1em;
 }
 
 @media screen and (max-width: 1080px){
