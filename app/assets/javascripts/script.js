@@ -103,19 +103,5 @@ $(document).on('turbolinks:load', function() {
         }, 700);
     });
 
-
-
-    /****************************LIMIT TEXT SPACE FOR STUFF *********************/
-
-    $(".character-limit-250").text(function(index, currentText) {
-    	return currentText.substr(0, 250) + "...";
-	});
-
-	/****************************Skillbar*********************/
-	$(".bar").each(function(){
-	  $(this).find(".bar-inner").animate({
-	    width: $(this).attr("data-width")
-	  },2000)
-	});
  
 });
