@@ -19,6 +19,11 @@
     <pre><code data-language="html"><%= @problem.code %>
     </code></pre>
   </div>
+</div>
 
-<%= link_to 'Edit', edit_problem_path(@problem) %> |
-<%= link_to 'Back', problems_path %>
+<%= link_to 'Edit', edit_problem_path(@problem), class: "btn btn-orange border-none btn-rounded-corner" %> |
+<%= link_to 'Back', problems_path, class: "btn btn-white border-none btn-rounded-corner" %>
+
+
+<br>
+<br>

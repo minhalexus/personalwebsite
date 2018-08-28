@@ -8,7 +8,7 @@
       <% @projects.each do |project| %>
         <div class="col-md-4">
           <div class="card">
-            <%= image_tag project.image, class: "card-img-top img-responsive max-width-100", alt:"" %>
+            <%= image_tag project.image, class: "card-img-top img-responsive max-width-100 size-300x200", alt:"" %>
             <div class="card-block">
               <p class="card-text"><small class="text-muted blog-category">web design</small></p>
               <h4 class="card-title"><%= link_to project.Title, project %></h4>

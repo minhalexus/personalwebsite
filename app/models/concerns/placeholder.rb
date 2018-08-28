@@ -3,6 +3,6 @@ module Placeholder
 
 	def self.image_generator(height:, width:)
 		#"http://placehold.it/#{height}x#{width}"
-		"https://via.placeholder.com/350x150"
+		"https://via.placeholder.com/400x500"
 	end
 end
