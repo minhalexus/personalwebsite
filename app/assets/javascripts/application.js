@@ -19,5 +19,4 @@
 //= require codeboxscript
 //= require cards
 //= require script
-//= require_tree .
 
