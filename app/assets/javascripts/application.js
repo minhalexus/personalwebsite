@@ -15,8 +15,6 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require owl.carousel
-//= require codeboxscript
-//= require cards
 //= require turbolinks
 
 $(document).on('turbolinks:load', function() {
