@@ -13,10 +13,10 @@
 //= require rails-ujs
 //= require activestorage
 //= require jquery
-//= require turbolinks
 //= require bootstrap-sprockets
 //= require owl.carousel
 //= require codeboxscript
 //= require cards
 //= require script
+//= require turbolinks
 
