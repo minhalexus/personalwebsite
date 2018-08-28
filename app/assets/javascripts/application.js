@@ -136,5 +136,31 @@ $(document).on('turbolinks:load', function() {
 	    width: $(this).attr("data-width")
 	  },2000)
 	});
+
+
+
+	/*************************JS for CARDs in projects *************************/
+
+	$('ul.nav.nav-pills li.nav-item a.nav-link').click(function() {  
+        $('#nav-all').removeClass('active');
+        $('#nav-css').removeClass('active');
+        $('#nav-js').removeClass('active');
+        $(this).addClass('active');
+    });
+   
+  
+   $('#nav-all').click(function(){
+     $('.col-md-4').show();
+   });
+  
+   $('#nav-css').click(function(){
+     $('.col-md-4').hide();
+     $('.cssProject').show();
+   });
+  
+   $('#nav-js').click(function(){
+     $('.col-md-4').hide();
+     $('.jsProject').show();
+   });
  
 });

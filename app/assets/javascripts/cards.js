@@ -21,7 +21,7 @@ $(function(){
    $('#nav-js').click(function(){
      $('.col-md-4').hide();
      $('.jsProject').show();
-   })
+   });
   
 
   
