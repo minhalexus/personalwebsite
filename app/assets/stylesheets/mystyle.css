@@ -113,3 +113,12 @@ p{
 	height: 200px;
 	align-self: center;
 }
+
+.bar-inner{
+	background: red;
+	background-image: linear-gradient(to right bottom, #8c414b, #a53944, #bc2e38, #d11f28, #e30d0d);
+}
+
+.bar{
+	background: grey;
+}

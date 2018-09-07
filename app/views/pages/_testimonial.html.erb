@@ -6,45 +6,17 @@
       <hr class="heading-devider gradient-orange">
     </div>
 
-    <div class="bar-1">
-    <h5 class="text-white"> Ruby on Rails </h5>
-    <div class="bar" data-width="60%">
-      <div class="bar-inner" style="background: red;">
-        
+    <% @languages.each do |language| %>
+      <div class="bar-1">
+        <h5 class="text-white"> <%= language.name %> </h5>
+        <div class="bar" data-width="<%= language.percent_understood %>%">
+          <div class="bar-inner">
+            
+          </div>
+          <div class="bar-percent">60%</div>
+        </div>
       </div>
-      <div class="bar-percent">60%</div>
-    </div>
-    </div>
-
-    <div class="bar-1">
-    <h5 class="text-white"> Python </h5>
-    <div class="bar" data-width="85%">
-      <div class="bar-inner" style="background: yellow;">
-        
-      </div>
-      <div class="bar-percent">85%</div>
-    </div>
-    </div>
-
-    <div class="bar-1">
-    <h5 class="text-white"> Java </h5>
-    <div class="bar" data-width="75%">
-      <div class="bar-inner" style="background: blue;">
-        
-      </div>
-      <div class="bar-percent">75%</div>
-    </div>
-    </div>
-
-    <div class="bar-1">
-    <h5 class="text-white"> HTML/CSS </h5>
-    <div class="bar" data-width="70%">
-      <div class="bar-inner" style="background: black;">
-        
-      </div>
-      <div class="bar-percent">70%</div>
-    </div>
-    </div>
+    <% end %>
     
   </div>
 </section>

@@ -46,3 +46,9 @@ end
 		sadfiodjasfiodjasfoij
 		fghdfughouho = shf oasidjf ")
 end
+
+
+10.times do |code|
+	Language.create(name: "Language number #{code}", 
+		percent_understood: 54)
+end

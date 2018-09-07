@@ -71,6 +71,16 @@ class PagesController < ApplicationController
       else
         @projects = Project.take(3)
       end
+
+      if Language.count <= 6
+        @languages = Language.all
+        puts "****************************************************************"
+        puts "selecting #{Project.count} projects"
+        puts "****************************************************************"
+      else
+        @languages = Language.take(6)
+      end
+
     end
 
 end
