@@ -39,7 +39,7 @@ h2{
 }
 
 .font-size-80{
-	font-size: 80px;
+	font-size: 5rem;
 }
 
 .center-padding{
@@ -82,7 +82,7 @@ a{
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 1);
 }
 
 .position-bottom{
@@ -152,3 +152,41 @@ p{
   left: 0;
   border: 0;
 }
+
+.website-image{
+	background-image: url(<%= asset_path 'website-landing.jpg' %>);
+	background-size: cover;
+}
+
+.uw-logo{
+	width: 20%;
+  	height: auto;
+  	position:absolute; /* Required */
+	bottom:0; /* Aligns at the bottom */
+}
+
+@media screen and (max-width: 1500px){
+	.website-image{
+		background-image: linear-gradient(to left bottom, #1680b2, #00a3c7, #00c2b2, #00dc78, #a8eb12);
+	}
+
+	.font-size-80{
+		font-size: 3rem;
+	}
+	.uw-logo{
+		width: auto;
+	  	height: 10%;
+	  	position:absolute; /* Required */
+		bottom:0; /* Aligns at the bottom */
+	}
+}
+
+@media screen and (max-height: 500px){
+	.uw-logo{
+		width: 0px;
+	  	height: 0px;
+	  	position:absolute; /* Required */
+		bottom:0; /* Aligns at the bottom */
+	}
+}
+

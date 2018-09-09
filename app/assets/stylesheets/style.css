@@ -52,7 +52,7 @@ p{
 	vertical-align: middle;
 }
 .navbar{
-	background-color: transparent !important;
+	background-color: rgba(0,0,0,.14) !important;
 	border-color: transparent !important;
 	border:0px;
 	padding-top: 30px;

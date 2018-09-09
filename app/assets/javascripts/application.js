@@ -16,5 +16,6 @@
 //= require bootstrap-sprockets
 //= require owl.carousel
 //= require turbolinks
+//= require cards
 //= require script
 

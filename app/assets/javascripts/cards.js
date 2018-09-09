@@ -23,10 +23,6 @@ $(function(){
      $('.jsProject').show();
    });
   
-
-  
- 
-  
 });
 //cssProject
 //javascriptProject

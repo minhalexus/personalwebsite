@@ -9,7 +9,12 @@ class Project < ApplicationRecord
 
 	after_initialize :set_default
 
+
 	def set_default
-		self.image ||= Placeholder.image_generator(height: '180', width: '300')
+		if self.language.name == "Ruby"
+			self.image = 'ruby-on-rails.jpg'
+		else
+			self.image ||= Placeholder.image_generator(height: '180', width: '300')
+		end
 	end
 end
