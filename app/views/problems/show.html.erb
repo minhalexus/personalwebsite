@@ -1,29 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="container padding-top-bottom-60">
 
-<p>
-  <h3><%= @problem.name %></h3>
-</p>
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <h4><%= @problem.from %></h4>
-</p>
+	 <h3 class="center"><%= @problem.name %></h3>
 
-<p>
-  <%= @problem.description %>
-</p>
+	<p>
+	  <h5><%= @problem.from %></h5>
+	</p>
 
-<div ng-app="MyApp" ng-controller="AppCtrl">
-  <!-- HTML Box -->
-  <div class="codeheader" id="codeheader_html">{{ html }}</div>
-  <div id="codebox">
-    <pre><code data-language="html"><%= @problem.code %>
-    </code></pre>
-  </div>
+	<p>
+		<strong> Description: </strong>
+		<%= @problem.description %>
+	</p>
+
+	<!-- HTML Box -->
+	<div class="codeheader" id="codeheader_html"><%= @problem.language.name %></div>
+	<div id="codebox">
+		<pre><code data-language="<%= @problem.language.name %>"><%= @problem.code %></code></pre>
+	</div>
+
+	<% if logged_in? (:admin) %>
+		<%= link_to 'Edit', edit_problem_path(@problem), class: "btn btn-orange border-none btn-rounded-corner" %> |
+	<% end %>
+	<%= link_to 'Back', problems_path, class: "btn btn-white border-none btn-rounded-corner" %>
 </div>
-
-<%= link_to 'Edit', edit_problem_path(@problem), class: "btn btn-orange border-none btn-rounded-corner" %> |
-<%= link_to 'Back', problems_path, class: "btn btn-white border-none btn-rounded-corner" %>
-
-
-<br>
-<br>

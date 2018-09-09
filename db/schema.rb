@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_08_185441) do
+ActiveRecord::Schema.define(version: 2018_09_09_185645) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 2018_09_08_185441) do
     t.text "image"
     t.bigint "language_id"
     t.text "youtube_url"
+    t.text "github_url"
     t.index ["language_id"], name: "index_projects_on_language_id"
   end
 

@@ -1,7 +1,12 @@
-<br>
+<div class = "container padding-top-bottom-60" >
+	<h3> Problem Archive </h3>
 
-<%= render 'table' %>
-<hr>
+	<br>
+
+	<%= render 'table' %>
+	<hr>
 
 
-<%= link_to 'New Problem', new_problem_path %>
+	<%= link_to 'New Problem <i class="ion-android-add"></i>'.html_safe, new_problem_path,  class: "btn btn-orange border-none btn-rounded-corner" if logged_in?(:admin) %>
+	<%= link_to 'Home', root_url, class: "btn btn-orange border-none btn-rounded-corner" %>
+</div>

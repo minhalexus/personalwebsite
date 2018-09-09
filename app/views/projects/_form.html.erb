@@ -26,6 +26,11 @@
     <%= form.text_area :youtube_url %>
   </div>
 
+  <div class="field">
+    <%= form.label :github_url %>
+    <%= form.text_area :github_url %>
+  </div>
+
   <div class="form-group">
     <%= form.select(:language_id, options_from_collection_for_select(Language.all, :id, :name)) %>
   </div>
