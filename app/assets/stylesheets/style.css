@@ -203,10 +203,10 @@ header{
 	text-transform: initial;
 }
 .card-block{
-	padding-left:3rem;
-	padding-right:3rem;
-	padding-top:2rem;
-	padding-bottom:2rem;
+	padding: 1rem;
+	padding-bottom: 2rem;
+	padding-right: 1.4rem;
+	padding-left: 1.4rem;
 }
 /*******************************************TESTIMONIAL**********************************************/
 .heading-wraper{
@@ -530,6 +530,7 @@ ul.social-list li a:hover, ul.social-list li a:focus{
 }
 .max-width-100{
 	max-width: 100% !important;
+	max-height: auto;
 }
 .italic{
 	font-style: italic;
