@@ -26,10 +26,12 @@ $(document).on('turbolinks:load', function() {
 	if (offsettop > 50) {
         $('.navbar').addClass('colored-nav');
         $('.navbar').addClass('gradient-violat');
+        $('.navbar').addClass('navbar-color');
         $("#scroll-top-div").fadeIn('500');
     } else {
         $('.navbar').removeClass('colored-nav');
         $('.navbar').removeClass('gradient-violat');
+        $('.navbar').removeClass('navbar-color');
         $("#scroll-top-div").fadeOut('500');
     }
 	var num = 50; //number of pixels before modifying styles
@@ -38,10 +40,12 @@ $(document).on('turbolinks:load', function() {
 	    if ($(window).scrollTop() > num) {
 	        $('.navbar').addClass('colored-nav');
 	        $('.navbar').addClass('gradient-violat');
+	        $('.navbar').addClass('navbar-color');
 	        $("#scroll-top-div").fadeIn('500');
 	    } else {
 	        $('.navbar').removeClass('colored-nav');
 	        $('.navbar').removeClass('gradient-violat');
+	        $('.navbar').removeClass('navbar-color');
 	        $("#scroll-top-div").fadeOut('500');
 	    }
 	});

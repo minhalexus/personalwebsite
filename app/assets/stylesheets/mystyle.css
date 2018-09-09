@@ -116,9 +116,39 @@ p{
 
 .bar-inner{
 	background: red;
-	background-image: linear-gradient(to right bottom, #8c414b, #a53944, #bc2e38, #d11f28, #e30d0d);
+	background-image: linear-gradient(to right bottom, #009954, #009954);
 }
 
 .bar{
 	background: grey;
+}
+
+.padding-top-90{
+	padding-top: 90px;
+}
+
+.heading-wraper{
+	margin-bottom: 50px;
+}
+
+.navbar-color{
+	background-image: linear-gradient(to left bottom, #00cc70, #00cc70);
+	opacity: 0.98;
+}
+
+.youtube-video {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 56%; /* 9 / 16 * 100 */
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.youtube-video > iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
 }

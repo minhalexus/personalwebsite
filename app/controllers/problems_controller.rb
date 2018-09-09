@@ -55,6 +55,6 @@ class ProblemsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def problem_params
-      params.require(:problem).permit(:name, :from, :description, :code)
+      params.require(:problem).permit(:name, :from, :description, :code, :language_id)
     end
 end

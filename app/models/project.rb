@@ -1,10 +1,10 @@
 class Project < ApplicationRecord
-
+	belongs_to :language
 
 	include Placeholder
 
 	#Title, Description, image
-	validates :Title, :Description, presence: true
+	validates :Title, :Description, :language_id, presence: true
 
 
 	after_initialize :set_default

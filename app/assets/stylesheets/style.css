@@ -637,6 +637,8 @@ ul.social-list li a:hover, ul.social-list li a:focus{
 	    background-image: -o-linear-gradient(305deg, rgb(232,88,137) 0%, rgb(232,98,123) 32%, rgb(232,108,108) 100%);
 	    background-image: linear-gradient(35deg, rgb(232,88,137) 0%, rgb(232,98,123) 32%, rgb(232,108,108) 100%);
 	    background-image: linear-gradient(to left bottom, #1680b2, #00a3c7, #00c2b2, #00dc78, #a8eb12);
+	    background-image: linear-gradient(to left bottom, #00cc70, #00cc70);
+
 	}
 	.navbar-divider{
 		display: none;

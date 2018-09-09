@@ -14,6 +14,14 @@
   <%= @project.Description %>
 </p>
 
+
+<% if (@project.youtube_url != nil) %>
+	<div class="youtube-video">
+	  <iframe src=<%= @project.youtube_url %> allowfullscreen="true">
+	  </iframe>
+	</div>
+<% end %>
+
 <%= link_to 'Edit', edit_project_path(@project), class: "btn btn-orange border-none btn-rounded-corner" %> |
 <%= link_to 'Back', projects_path, class: "btn btn-white border-none btn-rounded-corner" %>
 
