@@ -18,8 +18,8 @@ class PagesController < ApplicationController
   def add_email_to_list
     @emailaddress = EmailList.new(email_params)
     if  @emailaddress.save
-      puts "***************** Message Saved ***********************"
-      redirect_to (root_url + '#newsletter'), notice: 'Submitted Sucessfully!'
+      puts "***************** Email Saved ***********************"
+      redirect_to (root_url + '#contact'), notice: 'Submitted Sucessfully!'
     else
       render :index
     end

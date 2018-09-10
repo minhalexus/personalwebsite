@@ -13,15 +13,14 @@
 		</p>
 
 
-		<% if (@project.youtube_url != nil) %>
+		<% if (@project.youtube_url != nil && @project.youtube_url != "") %>
 			<div class="youtube-video">
-			  <iframe src=<%= @project.youtube_url %> allowfullscreen="true">
-			  </iframe>
+				<%= (@project.youtube_url).html_safe %>
 			</div>
 		<% end %>
 
-		<% if (@project.github_url != nil) %>
-			<%= @project.github_url %>
+		<% if (@project.github_url != nil && @project.github_url != "") %>
+			<%= link_to "Checkout Code At Github", @project.github_url %>
 		<% end %>
 	</div>
 

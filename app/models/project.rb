@@ -11,9 +11,13 @@ class Project < ApplicationRecord
 
 
 	def set_default
-		if self.language.name == "Ruby"
-			self.image = 'ruby-on-rails.jpg'
-		else
+		begin
+			if self.language.name == "Ruby"
+				self.image = 'ruby-on-rails.jpg'
+			else
+				self.image ||= Placeholder.image_generator(height: '180', width: '300')
+			end
+		rescue
 			self.image ||= Placeholder.image_generator(height: '180', width: '300')
 		end
 	end

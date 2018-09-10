@@ -1,4 +1,4 @@
-i/****************************************TYPOGRAPHY ***************************************************/
+/****************************************TYPOGRAPHY ***************************************************/
 body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -59,7 +59,6 @@ p{
 	transition: all .5s ease;
 }
 .navbar-brand{
-	padding: 0;
 }
 .navbar-brand img{
 	max-height: 50px;

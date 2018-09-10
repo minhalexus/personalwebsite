@@ -1,8 +1,9 @@
 <div class="container padding-top-bottom-60">
   <h3>Project Archive</h3>
 
-  <div data-turbolinks = "false">
+  <!-- <div data-turbolinks = "false"> -->
 
+    <!--
     <ul class="nav nav-pills">
       <li class="nav-item">
         <a id="nav-all", class="nav-link active" href="#">All</a>
@@ -13,7 +14,7 @@
       <li class="nav-item">
         <a id="nav-js", class="nav-link" href="#">Javascript</a>
       </li>
-    </ul>
+    </ul> -->
 
     <div class="row">
       <% @projects.each do |project| %>
@@ -34,7 +35,8 @@
         </div>
       <% end %>
     </div>
-  </div>
+
+  <!-- </div> -->
 
   <div class="btn-group btn-group-justified">
     <%= link_to 'Add New Project', new_project_path, class: "btn btn-success" if logged_in?(:admin)%>
