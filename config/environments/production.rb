@@ -104,7 +104,7 @@ Rails.application.configure do
     authentication:       'plain',
     enable_starttls_auto: true
   }
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'shanjer.herokuapp.com'}
 
   config.require_master_key = true
   #config.file_watcher = ActiveSupport::EventedFileUpdateChecker
