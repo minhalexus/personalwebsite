@@ -1,0 +1,27 @@
+<section id="skills" class="testimonial-section padding-top-bottom-90 gradient-violat">
+
+  <div class="container">
+    <div class="heading-wraper text-center">
+      <h4 class="text-white">My Skills</h4>
+      <hr class="heading-devider gradient-orange">
+    </div>
+
+    <% @languages.each do |language| %>
+        <h5 class="text-white"> <%= language.name %> </h5>
+        <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-success progress-bar-animated width-half" role="progressbar" aria-valuenow="<%= language.percent_understood %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= language.percent_understood %>%">
+          <% if language.percent_understood <= 25 %>
+              <b> BEGINNER </b>
+          <% elsif language.percent_understood <= 75 %>
+              <b> INTERMEDIATE </b>
+          <% else %>
+              <b> ADVANCED </b>
+          <% end %>
+         </div>
+        </div>
+    <% end %>
+
+    
+    
+  </div>
+</section>
