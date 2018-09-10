@@ -105,7 +105,7 @@ Rails.application.configure do
     enable_starttls_auto: true
   }
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-  config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-  config.exceptions_app = self.routes
+  #config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+  #config.exceptions_app = self.routes
 
 end
