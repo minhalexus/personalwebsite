@@ -6,6 +6,6 @@ module Title
 	end
 
 	def set_title
-		@title = "Minhal Shanjer UW"
+		@title = "Minhal Shanjer"
 	end
 end
