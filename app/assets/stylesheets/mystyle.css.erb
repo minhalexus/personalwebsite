@@ -138,57 +138,6 @@ p{
   border: 0;
 }
 
-.website-image{
-	background-image: url(<%= asset_path 'website-landing.jpg' %>);
-	background-repeat: no-repeat;
-}
-
-.uw-logo{
-	width: 20%;
-  	height: auto;
-  	position:absolute; /* Required */
-	bottom:0; /* Aligns at the bottom */
-
-}
-
-@media screen and (max-width: 1366px){
-	.website-image{
-		background-image: url(<%= asset_path 'website-landing_1366x768.jpg' %>);
-		background-repeat: no-repeat;
-	}
-
-	.uw-logo{
-		width: 20%;
-	  	height: auto;
-	  	position:absolute; /* Required */
-		bottom:0; /* Aligns at the bottom */
-	}
-}
-
-@media screen and (max-width: 1000px){
-	.website-image{
-		background-image: linear-gradient(to left bottom, #1680b2, #00a3c7, #00c2b2, #00dc78, #a8eb12);
-	}
-
-	.font-size-80{
-		font-size: 3rem;
-	}
-	.uw-logo{
-		width: 0px;
-	  	height: 0px;
-	  	position:absolute; /* Required */
-		bottom:0; /* Aligns at the bottom */
-	}
-}
-
-@media screen and (max-height: 700px){
-	.uw-logo{
-		width: 0px;
-	  	height: 0px;
-	  	position:absolute; /* Required */
-		bottom:0; /* Aligns at the bottom */
-	}
-}
 
 .blue-color{
 	color: #0c6c99 !important;
@@ -252,4 +201,88 @@ p{
 
 .logo-font{
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+.website-image{
+	background-image: url(<%= asset_path 'website-landing.jpg' %>);
+	background-repeat: no-repeat;
+	background: contain;
+}
+
+.uw-logo{
+	width: 20%;
+  	height: auto;
+  	position:absolute; /* Required */
+	bottom:0; /* Aligns at the bottom */
+}
+
+@media screen and (max-width: 1920px){
+
+	.website-image{
+		background-image: url(<%= asset_path 'website-landing.jpg' %>);
+		background-repeat: no-repeat;
+		background: auto;
+	}
+
+	.uw-logo{
+		width: 20%;
+	  	height: auto;
+	  	position:absolute; /* Required */
+		bottom:0; /* Aligns at the bottom */
+	}
+}
+
+@media screen and (max-width: 1600px){
+	.website-image{
+		background-image: url(<%= asset_path 'website-landing_1600x900.jpg' %>);
+		background-repeat: no-repeat;
+		background: auto;
+	}
+
+	.uw-logo{
+		width: 20%;
+	  	height: auto;
+	  	position:absolute; /* Required */
+		bottom:0; /* Aligns at the bottom */
+	}
+}
+
+@media screen and (max-width: 1366px){
+	.website-image{
+		background-image: url(<%= asset_path 'website-landing_1366x768.jpg' %>);
+		background-repeat: no-repeat;
+		background: auto;
+	}
+
+	.uw-logo{
+		width: 20%;
+	  	height: auto;
+	  	position:absolute; /* Required */
+		bottom:0; /* Aligns at the bottom */
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.website-image{
+		background-image: linear-gradient(to left bottom, #1680b2, #00a3c7, #00c2b2, #00dc78, #a8eb12);
+	}
+
+	.font-size-80{
+		font-size: 3rem;
+	}
+	.uw-logo{
+		width: 0px;
+	  	height: 0px;
+	  	position:absolute; /* Required */
+		bottom:0; /* Aligns at the bottom */
+	}
+}
+
+@media screen and (max-height: 700px){
+	.uw-logo{
+		width: 0px;
+	  	height: 0px;
+	  	position:absolute; /* Required */
+		bottom:0; /* Aligns at the bottom */
+	}
 }
