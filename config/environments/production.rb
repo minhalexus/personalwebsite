@@ -110,4 +110,6 @@ Rails.application.configure do
   #config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   #config.exceptions_app = self.routes
 
+  config.force_ssl = true
+
 end
