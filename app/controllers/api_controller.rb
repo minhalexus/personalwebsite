@@ -1,9 +1,8 @@
 class ApiController < ActionController::Base
 
 	def index
-		@object = Project.take(3)
+		@object = Project.all
 		render json: @object
-
 	end
 
 end
