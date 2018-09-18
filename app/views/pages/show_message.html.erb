@@ -1,15 +1,14 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 align="center">Messages</h1>
+    <h1 class="text-white" align="center">Messages</h1>
     <p class="lead", align="center">Always striving to create something magical.</p>
   </div>
 </div>
 
-<br>
+<div class="container">
+	<h5><%= @message.name %> </h5>
 
-<h3><%= @message.name %> </h3>
+	<h6><%= @message.email %></h6>
 
-<h3><%= @message.email %></h3>
-
-<p><%= @message.content %></p>
-
+	<p><%= @message.content %></p>
+</div>
