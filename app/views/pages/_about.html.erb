@@ -1,18 +1,16 @@
 <section id="about" class="padding-top-90 padding-bottom-90">
   <div class="container">
     <div class="row">
+      <div class="col-md-12">
+        <div class="heading-wraper text-center margin-bottom-25">
+            <h4>About Me</h4>
+            <hr class="heading-devider gradient-orange">
+        </div>
+      </div>
       <div class="col-md-4">
         <%= image_tag "minhalshanjer.jpg", class: "img-responsive profile-border", alt:"" %> <!-- removed sm-display-none class from imgtag -->
       </div>
-      <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="heading-wraper text-center margin-bottom-25">
-              <h4>About Me</h4>
-              <hr class="heading-devider gradient-orange">
-            </div>
-          </div>
-        </div>
+      <div class="col-md-8 padding-top-90">
         <div class="row">
           <div class="col-md-6 col-sm-6">
             <h5 class="service-title">Personal</h5>
@@ -23,7 +21,7 @@
             <p class="services-content margin-bottom-25">Web Development | Machine Learning | Software Development | Web Scraping | Virtual Reality </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row padding-top-35">
           <div class="col-md-6 col-sm-6">
             <h5 class="service-title">Hobbies</h5>
             <p class="services-content margin-bottom-25">Passionate guitarist. Artist in training. Avid video game player. Shout out to <%= link_to "Europa Universalis IV.", "https://eu4.paradoxwikis.com/Europa_Universalis_4_Wiki" %></p>
