@@ -78,7 +78,7 @@ class PagesController < ApplicationController
         puts "selecting #{Project.count} projects"
         puts "****************************************************************"
       else
-        @languages = Language.take(8).order(percent_understood: :desc)
+        @languages = Language.order(percent_understood: :desc).take(8)
       end
 
     end
