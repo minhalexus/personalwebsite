@@ -2,9 +2,12 @@
 	<h3 class="center"> <%= @project.Title %> </h3>
 
 	<div class="col-md-8 sm-display-none">
-		<% if @project.project_image == nil %>
+		<% puts "#{@project.Title.downcase.split.last}" %>
+		<% if ActionController::Base.helpers.resolve_asset_path("#{@project.Title.downcase.split.last}.jpg") == nil %>
 			<%= image_tag @project.image, class: "show-project-image" unless @project.image.nil? %>
 		<% else %>
+			<% puts "******************************** EXISTS *******************" %>
+			<% puts "#{@project.project_image}" %>
 			<%= image_tag @project.project_image, class: "show-project-image" unless @project.project_image.nil? %>
 		<% end %>
 	</div>

@@ -19,14 +19,7 @@ class Project < ApplicationRecord
 
 		if self.Title != nil
 			lastname = self.Title.downcase.split.last
-			puts "******************imagefile name: #{lastname}****************************"
-
-			if ActionController::Base.helpers.resolve_asset_path("#{lastname}.jpg") != nil
-				self.project_image ||= "#{lastname}.jpg"
-			else
-				puts "*************************Image file for project does not exist, in project.rb********************************************************"
-				self.project_image = nil
-			end
+			self.project_image = "#{lastname}.jpg"
 		end
 	end
 end
