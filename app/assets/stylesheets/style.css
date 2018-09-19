@@ -581,7 +581,7 @@ ul.social-list li a:hover, ul.social-list li a:focus{
     background-color: #28a745;
     border-radius: 30px;
     color: #fff;
-    box-shadow: 0px 4px 10px 0px rgba(91, 91, 91, 0.45)
+    box-shadow: 0px 4px 10px 0px rgba(91, 91, 91, 0.7)
 }
 .scroll-top-icon-container i{
 	display: table-cell;

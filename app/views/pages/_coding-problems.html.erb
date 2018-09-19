@@ -1,4 +1,4 @@
-<section id="coding-problems" class="padding-top-bottom-120 bg-image-fit-100" style="background:url(<%=asset_path('Elegant_Background.jpg') %>">
+<section id="coding-problems" class="padding-top-bottom-120 bg-image-fit-100 dark-background">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -11,7 +11,7 @@
         <% @problems.each do |problem| %>
           <div class="feature-wiget">
             <div class="icon-wraper">
-              <h5 class="bottom-line"><i class="ion-code"></i> <%= link_to problem.name, problem %></h5>
+              <h5 class="bottom-line"><i class="ion-code special-code-icon"></i><%= link_to problem.name, problem %></h5>
             </div>
             <div class="content">
               <h6><%= problem.from %></h6>
@@ -21,7 +21,7 @@
         <% end %>
 
         <div class="cta-btn-group">
-          <%= link_to problems_url, class: "btn btn-blue border-none btn-rounded-corner vertical-middle" do %>
+          <%= link_to problems_url, class: "btn btn-blue border-none btn-rounded-corner width-archive-btn" do %>
                 See Full Archive <span class="icon-on-button"><i class="ion-ios-arrow-thin-right"></i></span>
           <% end %>
         </div>

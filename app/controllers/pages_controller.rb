@@ -60,7 +60,7 @@ class PagesController < ApplicationController
         puts "slecting #{Problem.count} problems"
         puts "****************************************************************"
       else
-        @problems = Problem.take(3)
+        @problems = Problem.order(created_at: :desc).take(3)
       end
 
       if Project.count <= 3
@@ -69,7 +69,7 @@ class PagesController < ApplicationController
         puts "selecting #{Project.count} projects"
         puts "****************************************************************"
       else
-        @projects = Project.take(3)
+        @projects = Project.order(created_at: :desc).take(3)
       end
 
       if Language.count <= 8
