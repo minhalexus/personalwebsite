@@ -18,9 +18,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-1">
-      </div>
-      <div class="col-md-5">
+      <div class="col-md-1"></div>
+
+      <div class="col-md-5 relative-div">
         <div class="row">
           <div class="col-md-12 padding-top-35">
             <div class="subscription-wraper text-center">
@@ -29,7 +29,32 @@
               <%= render 'newsletter-form' %>
             </div>
           </div>
+
+          <div class="col-md-12 padding-top-90">
+              <h4 class="text-upper text-center">Email Address</h4>
+              <p class="text-center">Please no solicitation!</p>
+              <p class="contact-email text-center">
+                mashanje@uwaterloo.ca
+                <br>
+                mshanjer@gmail.com
+              </p>
+          </div>
+
+
+
+          <div class="bottom-right sm-display-none">
+            <div class="col-md-12 sm-display-none">
+              <ul class="footer-follow-v">
+                <li><%= link_to "<i class=\"ion-social-github\"></i>".html_safe, "https://www.github.com/minhalexus"%>
+                <li><%= link_to "<i class=\"ion-social-facebook\"></i>".html_safe, "https://www.facebook.com"%>
+                <li><%= link_to "<i class=\"ion-social-instagram\"></i>".html_safe, "https://www.instagram.com/minhalexus"%>
+                <li><%= link_to "<i class=\"ion-social-linkedin\"></i>".html_safe, "https://www.linkedin.com"%>
+              </ul>
+            </div>
+          </div>
+
         </div>
+
       </div>
     </div>
   </div>

@@ -30,6 +30,7 @@ a:hover, a:focus {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .footer-follow li {
     display: inline-block;
     margin-right: 10px;
@@ -57,3 +58,29 @@ a:hover, a:focus {
     color: #403f3f;
 }
 
+
+
+.footer-follow-v {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-follow-v li {
+    display: list-item;
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+
+.footer-follow-v li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #28a145;
+  color:#FFF;
+  box-shadow: 0px 4px 10px 0px rgba(91, 91, 91, 0.45)
+
+}
