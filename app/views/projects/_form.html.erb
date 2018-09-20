@@ -11,31 +11,27 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :Title %>
-    <%= form.text_field :Title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Description %>
-    <%= form.text_area :Description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :youtube_url %>
-    <%= form.text_area :youtube_url %>
-  </div>
-
-  <div class="field">
-    <%= form.label :github_url %>
-    <%= form.text_area :github_url %>
+  <div class="form-group">
+    <%= form.text_field :Title,  class: "form-control", placeholder:"Title" %>
   </div>
 
   <div class="form-group">
-    <%= form.select(:language_id, options_from_collection_for_select(Language.all, :id, :name)) %>
+    <%= form.text_area :Description,  class: "form-control", placeholder:"Description", rows:"7" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.text_area :youtube_url,  class: "form-control", placeholder:"Youtube Url" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.text_area :github_url,  class: "form-control", placeholder:"Github Url, eg: https://www.gitub.com" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.select(:language_id, options_from_collection_for_select(Language.all.order(:name), :id, :name), {}, {class: "form-control"}) %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Add Project", class: "btn btn-orange border-none btn-rounded-corner width-70" %>
   </div>
 <% end %>

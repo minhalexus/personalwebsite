@@ -10,14 +10,16 @@
   </thead>
 
   <tbody>
+    <% i = 1 %>
     <% @problems.each do |problem| %>
       <tr>
-        <th scope="row"><%= problem.id %></th>
+        <th scope="row"><%= i %></th>
         <td><%= link_to problem.name, problem %></td>
         <td><%= problem.from %></td>
         <td><%= problem.language.name %></td>
         <td><%= link_to '<i class="ion-close"></i>'.html_safe, problem, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:admin)%></td>
       </tr>
+      <% i = i + 1 %>
     <% end %>
   </tbody>
 </table>

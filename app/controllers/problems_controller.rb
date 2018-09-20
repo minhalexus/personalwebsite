@@ -5,7 +5,7 @@ class ProblemsController < ApplicationController
 
   # GET /problems
   def index
-    @problems = Problem.all
+    @problems = Problem.all.order(name: :desc)
   end
 
   # GET /problems/1
