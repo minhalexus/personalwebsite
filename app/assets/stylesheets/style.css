@@ -595,6 +595,9 @@ ul.social-list li a:hover, ul.social-list li a:focus{
         padding-top: 50px;
         padding-bottom: 75px;
     }
+    .sm-padding-top-60{
+    	padding-top: 60px;
+    }
     .testimonial-content{
     	padding:0.5rem 1rem;
     }

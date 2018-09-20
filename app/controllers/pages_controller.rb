@@ -9,6 +9,10 @@ class PagesController < ApplicationController
     @message = Message.new(message_params)
     if @message.save
     	puts "***************** Message Saved ***********************"
+      #Send Email to Admin
+      UserMailer.new_message.deliver_now
+
+
     	redirect_to (root_url + '#contact'), notice: 'Submitted Sucessfully!'
     else
       render :index
@@ -19,6 +23,8 @@ class PagesController < ApplicationController
     @emailaddress = EmailList.new(email_params)
     if  @emailaddress.save
       puts "***************** Email Saved ***********************"
+      #Send Message
+      UserMailer.new_suscriber.deliver_now
       redirect_to (root_url + '#contact'), notice: 'Submitted Sucessfully!'
     else
       render :index

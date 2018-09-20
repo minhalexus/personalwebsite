@@ -28,7 +28,7 @@ class ProjectsController < ApplicationController
     if @project.save
       redirect_to @project, notice: 'Project was successfully created.'
       if !(EmailList.first.nil?)
-        UserMailer.welcome_email.deliver_now unless Email_List.first.nil?
+        UserMailer.welcome_email.deliver_now unless EmailList.first.nil?
         puts "***********************************************************"
         puts "Sent EMAIL"
         puts "***********************************************************"

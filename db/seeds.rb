@@ -6,47 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Language.create(name: "Ruby", 
-		percent_understood: 54)
-Language.create(name: "Python", 
-		percent_understood: 91)
-
-10.times do |project|
-	Language.first.projects.create(Title: "Project number #{project}", 
-		Description: "If we list all the natural numbers below 10 that are multiples 
-		of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-		Find the sum of all the multiples of 3 or 5 below 1000.
-		If we list all the natural numbers below 10 that are multiples 
-		of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-		Find the sum of all the multiples of 3 or 5 below 1000.
-		If we list all the natural numbers below 10 that are multiples 
-		of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-		Find the sum of all the multiples of 3 or 5 below 1000.
-		If we list all the natural numbers below 10 that are multiples 
-		of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-		Find the sum of all the multiples of 3 or 5 below 1000.
-		If we list all the natural numbers below 10 that are multiples 
-		of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-		Find the sum of all the multiples of 3 or 5 below 1000.")
-end
-
-10.times do |code|
-	Language.last.problems.create(name: "Problem number #{code}", 
-		from: "Project Euler",
-		description: "If we list all the natural numbers below 10 that are multiples 
-		of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-		Find the sum of all the multiples of 3 or 5 below 1000.If we list all the natural numbers below 10 that are multiples 
-		of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-		Find the sum of all the multiples of 3 or 5 below 1000.If we list all the natural numbers below 10 that are multiples 
-		of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-		Find the sum of all the multiples of 3 or 5 below 1000.If we list all the natural numbers below 10 that are multiples 
-		of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-		Find the sum of all the multiples of 3 or 5 below 1000.If we list all the natural numbers below 10 that are multiples 
-		of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-		Find the sum of all the multiples of 3 or 5 below 1000.If we list all the natural numbers below 10 that are multiples 
-		of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-		Find the sum of all the multiples of 3 or 5 below 1000.",
-		code: "sadiofjaoisdjfiodsjafiodj
-		sadfiodjasfiodjasfoij
-		fghdfughouho = shf oasidj")
-end
+Language.create([
+	{name: "Ruby", percent_understood: 45},
+	{name: "Java", percent_understood: 65},
+	{name: "Python", percent_understood: 80},
+	{name: "MySQL", percent_understood: 40},
+	{name: "C", percent_understood: 55},
+	{name: "C++", percent_understood: 25},
+	{name: "Racket", percent_understood: 33}
+	])
