@@ -14,6 +14,7 @@ Language.create([
 	{name: "C", percent_understood: 65},
 	{name: "JavaScript", percent_understood: 38},
 	{name: "C++", percent_understood: 25},
-	{name: "Racket", percent_understood: 33}
-	{name: "Android", percent_understood: 51}
+	{name: "Racket", percent_understood: 33},
+	{name: "Android", percent_understood: 51},
+	{name: "Git", percent_understood: 72},
 	])
