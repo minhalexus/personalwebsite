@@ -12,7 +12,7 @@ Language.create([
 	{name: "Python", percent_understood: 85},
 	{name: "MySQL", percent_understood: 58},
 	{name: "C", percent_understood: 65},
-	{name: "JavaScript", percent_understood: 38}
+	{name: "JavaScript", percent_understood: 38},
 	{name: "C++", percent_understood: 25},
 	{name: "Racket", percent_understood: 33}
 	{name: "Android", percent_understood: 51}
