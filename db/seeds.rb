@@ -7,14 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Language.create([
-	{name: "Ruby", percent_understood: 48},
-	{name: "Java", percent_understood: 68},
+	{name: "Ruby", percent_understood: 25},
+	{name: "Java", percent_understood: 72},
 	{name: "Python", percent_understood: 85},
-	{name: "MySQL", percent_understood: 58},
+	{name: "MySQL", percent_understood: 40},
 	{name: "C", percent_understood: 65},
 	{name: "JavaScript", percent_understood: 38},
 	{name: "C++", percent_understood: 25},
 	{name: "Racket", percent_understood: 33},
-	{name: "Android", percent_understood: 51},
-	{name: "Git", percent_understood: 72},
+	{name: "Android", percent_understood: 42},
+	{name: "Git", percent_understood: 38},
 	])
