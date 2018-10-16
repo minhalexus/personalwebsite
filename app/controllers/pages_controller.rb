@@ -10,7 +10,7 @@ class PagesController < ApplicationController
     if @message.save
     	puts "***************** Message Saved ***********************"
       #Send Email to Admin
-      UserMailer.new_message.deliver_now
+      #UserMailer.new_message.deliver_now
 
 
     	redirect_to (root_url + '#contact'), notice: 'Submitted Sucessfully!'
@@ -24,7 +24,7 @@ class PagesController < ApplicationController
     if  @emailaddress.save
       puts "***************** Email Saved ***********************"
       #Send Message
-      UserMailer.new_suscriber.deliver_now
+      #UserMailer.new_suscriber.deliver_now
       redirect_to (root_url + '#contact'), notice: 'Submitted Sucessfully!'
     else
       render :index
@@ -86,7 +86,5 @@ class PagesController < ApplicationController
       else
         @languages = Language.order(percent_understood: :desc).take(10)
       end
-
     end
-
 end
