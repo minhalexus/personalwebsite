@@ -1,0 +1,5 @@
+<%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" if logged_in?(:admin, :user) %>
+
+<br>
+
+<%= Rails.application.credentials.TEMP_KEY if logged_in?(:admin, :user) %>

@@ -25,7 +25,11 @@ Rails.application.routes.draw do
   post 'addingemail', to: 'pages#add_email_to_list', as:'add_email'
 
 
+
+###############################API ###################################
   get 'json', as:'json', to: 'api#index'
+  get 'temp', as:'temp', to: 'api#temp'
+
 
 
 end
