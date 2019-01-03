@@ -112,4 +112,8 @@ Rails.application.configure do
 
   config.force_ssl = true
 
+  config.serve_static_files = false
+  config.assets.compile = false
+  
+
 end
